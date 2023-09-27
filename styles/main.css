@@ -19,9 +19,10 @@
   src: url(../fonts/Alta_regular.woff2);
 }
 :root {
-  --primaryColour: #e7ded9;
-  --secondaryColour: #221f2a;
+  --primaryColour: #e2ccc0; /* #e7ded9 {from ad}, #EEB698 {coral}, #F7D192 {yellow}, #6B7178 {gray} */
+  --secondaryColour: #221f2a; 
   --tertiaryColour: #ffffff;
+  --hoverColour: #B09F96; /* #427E93 {blue} */
 
   --headerHeight: 60px;
 }
@@ -118,7 +119,7 @@ body::after {  /* Used to preload images for transitions */
   color: var(--primaryColour);
 }
 .header-main-nav ul li a:hover, .header-main-nav ul li a:focus {
-  color: var(--secondaryColour);
+  color: var(--hoverColour);
 }
 
 
@@ -144,26 +145,38 @@ body::after {  /* Used to preload images for transitions */
   border-radius: 10px;
   padding: 2px 6px 2px 6px;
   font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease 0s;
 }
 #contactActive {
   color: var(--primaryColour);
+  transition: all 0.3s ease 0s;
 }
 #contactActive:hover, #contactActive:focus {
-  color: var(--secondaryColour);
+  color: var(--hoverColour);
 }
 .contact:hover, .contact:focus {
-  color: var(--secondaryColour);
+  color: var(--hoverColour);
 }
 
 #fb_icon { 
   background-image: url(../images/social-icons/facebook-bw.png);
+  transition: all 0.3s ease 0s;
 }
 #fb_icon:hover { 
   background-image: url(../images/social-icons/facebook.png);
 }
 #ig_icon { 
   background-image: url(../images/social-icons/instagram-bw.png);
+  transition: all 0.3s ease 0s;
 }
 #ig_icon:hover { 
   background-image: url(../images/social-icons/instagram.png);
+}
+
+
+footer {
+  width: 100%;
+  margin-top: 2vh;
+  box-shadow:  0 4px 0 rgba(0, 0, 0, 0.08), 0 -2px 4px 0 rgba(0, 0, 0, 0.12);
+  background-color: var(--tertiaryColour);
 }

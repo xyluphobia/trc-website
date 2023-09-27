@@ -23,7 +23,7 @@ main {
 
 .rotating-top-banner {
     top: 13vh;
-    left: 39.4vw;
+    left: 39vw;
     width: 30vw;
     height: 40vh;
     position: absolute;
@@ -60,7 +60,7 @@ main {
     margin: 4vh 12vw 0 4vw;
     font-size: 22px;
     line-height: 26px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* <--- EDIT FONT */
 }
 .main-intro a {
     display: block;
@@ -74,6 +74,10 @@ main {
     background-color: var(--primaryColour);
     color: white;
     font-family: Alta-Regular, Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease 0s;
+}
+.main-intro a:hover, .main-intro a:focus {
+    background-color: var(--hoverColour);
 }
 
 
@@ -93,4 +97,49 @@ main {
     background-repeat: no-repeat;
     background-position-x: center;
     z-index: 1;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7vh;
+}
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color: var(--primaryColour);
+    height: 2px;
+}
+
+
+.feedback-section {
+    margin-top: 16px;
+    display: flex;
+    width: 96%;
+    gap: 10px;
+}
+.feedback-section h3 {
+    margin-top: 4px;
+    font-size: 22px;
+    line-height: 26px;
+}
+.feedback-button {
+    display: block;
+    width: fit-content;
+    block-size: fit-content;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    font-size: 22px;
+    line-height: 26px;
+    background-color: var(--primaryColour);
+    color: white;
+    transition: all 0.3s ease 0s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.feedback-button:hover, .feedback-button:focus {
+    background-color: var(--hoverColour);
 }
