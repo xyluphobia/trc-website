@@ -47,13 +47,13 @@ main {
     margin: 24vh 0 0 4vw;
     color: var(--primaryColour);
     font-size: 24px;
-    line-height: 26px;
+    line-height: 28px;
     font-family: Alta-Light, Arial, Helvetica, sans-serif;
 }
 .main-intro h1 {
     margin: 7vh 0 0 4vw;
     font-size: 44px;
-    line-height: 46px;
+    line-height: 52px;
     font-family: Alta-Caption, Arial, Helvetica, sans-serif;
 }
 .main-intro p {
@@ -115,19 +115,26 @@ hr {
     height: 2px;
 }
 
+.index-testimonials h2 {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+.index-customer-testimonials{
+    margin: 2vh auto;
+}
 
-.feedback-section {
+.give-feedback-section {
     margin-top: 16px;
     display: flex;
     width: 96%;
     gap: 10px;
 }
-.feedback-section h3 {
+.give-feedback-section h3 {
     margin-top: 4px;
     font-size: 22px;
     line-height: 26px;
 }
-.feedback-button {
+.give-feedback-button {
     display: block;
     width: fit-content;
     block-size: fit-content;
@@ -140,6 +147,6 @@ hr {
     transition: all 0.3s ease 0s;
     font-family: Arial, Helvetica, sans-serif;
 }
-.feedback-button:hover, .feedback-button:focus {
+.give-feedback-button:hover, .give-feedback-button:focus {
     background-color: var(--hoverColour);
 }

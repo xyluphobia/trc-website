@@ -2,7 +2,8 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tri-River Consultants</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -18,8 +19,9 @@
             <nav class="header-main-nav">
             <ul>
                 <li><a href="index.html" id="home_nav" class="active">Home</a></li>
-                <li><a href="ourpeople.html" id="people_nav">Our People</a></li>
-                <li><a href="about.html" id="about_nav">About Us</a></li>
+                <li><div class="header-vertical-line"></div></li>
+                <li><a href="ourpeople.html" id="people_nav">Who we Are</a></li>
+                <li><div class="header-vertical-line"></div></li>
                 <li><a href="listings.html" id="listings_nav"> Our Listings</a></li>
             </ul>
         </nav>
@@ -33,6 +35,7 @@
         </div>
     </header>
 
+    <!-- Home banner page/index page -->
     <main>
         <div class="main-intro">
             <h2>Sanford Based Real Estate Agency</h2>
@@ -45,22 +48,28 @@
         <div class="under-banner"></div>
     </main>
 
-    <section class="testimonials">
+    <!-- Testimonials from customers pulled from the google reviews of the business. -->
+    <section class="index-testimonials">
         <h1>Testimonials</h1>
-        <h2>aaa</h2>
-        <hr />
-        <div class="customerTestimonials">
-            <p>demo testi</p>
+        <h2>You'll be in good company</h2>
+        <hr>
+        <div class="index-customer-testimonials">  <!-- Using a platform that charges after a while, will need to recreate later. -->
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-41db6ed9-7b29-484d-a3b1-0d90feccdc15"></div>
         </div>
-        <hr />
-        <div class="feedback-section">
+        <hr>
+        <div class="give-feedback-section">
             <h3>We would love to hear about</h3>
-            <a href="#" class="feedback-button">your experience with us.</a>
+            <a href="#" class="give-feedback-button">your experience with us.</a>
         </div>
     </section>
 
     <footer>
-        
+        <div class="footer-info">
+            <div class="footer-contact"></div>
+            <div class="footer-address"></div>
+            <div class="footer-business-hours"></div>
+        </div>
     </footer>
 </body>
 </html>
