@@ -136,12 +136,12 @@ body::after {  /* Used to preload images for transitions */
 }
 .header-vertical-line {
   border-left: 1px solid var(--hoverColour);
-  height: 48px;
-  margin-top: 6px;
+  height: calc(var(--headerHeight) * 0.8);
+  margin-top: calc(var(--headerHeight) * 0.1);
 }
 .header-main-nav ul li a {
   padding: 0 10px;
-  line-height: 60px;
+  line-height: var(--headerHeight);
   color: var(--secondaryColour);
   display: block;
   height: 100%;

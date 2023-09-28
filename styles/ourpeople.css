@@ -8,7 +8,10 @@ main {
     align-items: center;
 }
 
-
+main h1 {
+    margin-top: 6vh;
+    margin-bottom: 1vh;
+}
 .meet-team-hr {
     border: 0;
     clear:both;
@@ -16,10 +19,15 @@ main {
     width: 60%;               
     background-color: var(--primaryColour);
     height: 2px;
+    /* adding this is a workaround to the hr's height being set to 0
+       but I haven't found the underlying issue. */
+    min-height: 2px;
     margin: 0 auto;
 }
 
-
+.h2-leadership {
+    margin: 2vh 0 4vh 0;
+}
 .team-member-profiles-leadership {
     width: 100%;
     display: flex;
@@ -27,11 +35,17 @@ main {
     justify-content: space-around;
     padding: 0 25%;
 }
+.h2-agents {
+    margin: 0 0 4vh 0;
+}
 .team-member-profiles-agents-row1 {
     width: 100%;
     display: flex;
     column-gap: 2vw;
     justify-content: space-around;
+}
+.h2-admin {
+    margin: 0 0 4vh 0;
 }
 .team-member-profiles-admin {
     width: 100%;
