@@ -17,6 +17,7 @@ main {
     width: 100%;
     height: calc(100vh - var(--headerHeight)); 
     margin-top: var(--headerHeight);
+    background-color: var(--tertiaryColour);
     display: flex;
 }
 
@@ -100,21 +101,12 @@ main {
 }
 
 
-section {
+.index-testimonials {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 7vh;
 }
-hr {
-    border: 0;
-    clear:both;
-    display:block;
-    width: 96%;               
-    background-color: var(--primaryColour);
-    height: 2px;
-}
-
 .index-testimonials h2 {
     margin-top: 2vh;
     margin-bottom: 4vh;
