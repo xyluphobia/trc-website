@@ -25,45 +25,47 @@
   --hoverColour: #B09F96; /* #427E93 {blue} */
 
   --headerHeight: 60px;
+
+  font-size: 62.5%;
 }
 
 
 a {
   cursor: pointer;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
   color: var(--secondaryColour);
   font-family: MaatRounded, Arial, Helvetica, sans-serif;
   transition: all 0.3s ease 0s;
 }
 h1{
-  font-size: 42px;
-  line-height: 50px;
+  font-size: 4.2rem;
+  line-height: 5rem;
   color: var(--secondaryColour);
   font-family: MaatRounded, Arial, Helvetica, sans-serif;
   font-weight: 540;
 }
 h2 {
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
   color: var(--secondaryColour);
   font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
 }
 h3 {
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
   color: var(--secondaryColour);
   font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
 }
 h4 {
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
   color: var(--secondaryColour);
   font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
 }
 p{
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
   color: var(--secondaryColour);
   font-family: MaatRounded, Arial, Helvetica, sans-serif;
 }
@@ -104,7 +106,7 @@ body::after {  /* Used to preload images for transitions */
   justify-content: space-between;
   font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   z-index: 100;
 }
@@ -113,7 +115,7 @@ body::after {  /* Used to preload images for transitions */
 .header-main-logo-nav {
   width: fit-content;
   height: 100%;
-  padding-left: 60px;
+  padding-left: 6rem;
   display: flex;
 }
 .header-main-logo-nav img {
@@ -129,19 +131,19 @@ body::after {  /* Used to preload images for transitions */
 }
 .header-main-nav ul {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 3rem;
 }
 .header-main-nav ul li {
   display: inline;
   float: left;
 }
 .header-vertical-line {
-  border-left: 1px solid var(--hoverColour);
+  border-left: 0.1rem solid var(--hoverColour);
   height: calc(var(--headerHeight) * 0.8);
   margin-top: calc(var(--headerHeight) * 0.1);
 }
 .header-main-nav ul li a {
-  padding: 0 10px;
+  padding: 0 0.1rem;
   line-height: var(--headerHeight);
   color: var(--secondaryColour);
   display: block;
@@ -158,10 +160,10 @@ body::after {  /* Used to preload images for transitions */
 .header-main-socials {
   width: fit-content;
   height: 100%;
-  padding-right: 60px;
+  padding-right: 6rem;
   display: flex;
   align-items: center;
-  column-gap: 16px;
+  column-gap: 1.6rem;
 }
 .socials_icons {
   width: 32px;
@@ -170,12 +172,12 @@ body::after {  /* Used to preload images for transitions */
   background-size: cover;
 }
 .contact {
-  font-size: 20px;
-  margin-right: 2px;
+  font-size: 2rem;
+  margin-right: 0.2rem;
   color: var(--tertiaryColour);
   background-color: var(--secondaryColour);
-  border-radius: 10px;
-  padding: 2px 6px 2px 6px;
+  border-radius: 1rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
   font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
   transition: all 0.3s ease 0s;
 }
@@ -220,15 +222,15 @@ footer hr {
   margin-bottom: 1vh;
 }
 footer p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 footer h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 footer a {
-  font-size: 18px;
-  line-height: 34px;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
 }
 footer a:hover, footer a:focus {
   color: var(--hoverColour);
@@ -244,12 +246,12 @@ footer a:hover, footer a:focus {
   display: flex;
   flex-direction: column;
   align-self: center;
-  border-left: 2px solid var(--hoverColour);
+  border-left: 0.2rem solid var(--hoverColour);
   padding-left: 1%;
 }
 .footer-sitemap ul li a {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .footer-sitemap ul li .active {
   color: var(--hoverColour);
@@ -262,8 +264,8 @@ footer a:hover, footer a:focus {
   margin-left: 3%;
 }
 .footer-address ul li a {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
   display: block;
 }
 .footer-text {
@@ -279,8 +281,8 @@ footer a:hover, footer a:focus {
   flex-direction: column;
 }
 .footer-contact ul li a {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
   display: block;
 }
 .footer-contact ul li:last-child {

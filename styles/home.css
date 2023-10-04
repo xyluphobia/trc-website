@@ -47,20 +47,20 @@ main {
 .main-intro h2 {
     margin: 24vh 0 0 4vw;
     color: var(--primaryColour);
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
     font-family: Alta-Light, Arial, Helvetica, sans-serif;
 }
 .main-intro h1 {
     margin: 7vh 0 0 4vw;
-    font-size: 44px;
-    line-height: 52px;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
     font-family: Alta-Caption, Arial, Helvetica, sans-serif;
 }
 .main-intro p {
     margin: 4vh 12vw 0 4vw;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
     font-family: Arial, Helvetica, sans-serif; /* <--- EDIT FONT */
 }
 .main-intro a {
@@ -70,8 +70,8 @@ main {
     margin: 6vh 4vw 0 4vw;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
     background-color: var(--primaryColour);
     color: white;
     font-family: Alta-Regular, Arial, Helvetica, sans-serif;
@@ -107,9 +107,16 @@ main {
     align-items: center;
     margin-top: 7vh;
 }
-.index-testimonials h2 {
+.testimonials-sub-heading {
     margin-top: 2vh;
     margin-bottom: 4vh;
+}
+.testimonials-top-heading {
+    font-size: 4.2rem;
+    line-height: 5rem;
+    color: var(--secondaryColour);
+    font-family: MaatRounded, Arial, Helvetica, sans-serif;
+    font-weight: 540;
 }
 .index-customer-testimonials{
     margin: 2vh auto;
@@ -123,8 +130,8 @@ main {
 }
 .give-feedback-section h3 {
     margin-top: 4px;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
 }
 .give-feedback-button {
     display: block;
@@ -132,8 +139,8 @@ main {
     block-size: fit-content;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
     background-color: var(--primaryColour);
     color: white;
     transition: all 0.3s ease 0s;
