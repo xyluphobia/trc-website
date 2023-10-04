@@ -1,6 +1,151 @@
 main {
     width: 100%;
-    height: calc(100vh - var(--headerHeight)); 
-    margin-top: var(--headerHeight);
-    /*display: flex;*/
+    height: calc(108vh - var(--headerHeight));
+    display: flex;
+    justify-content: center;
+    background-color: rgb(47, 39, 56);
+    /*background-image: url(../images/TriRiverBanner3.jpg);
+    background-position-x: center;    
+    background-size: cover;*/
+}
+
+
+.contact-main-form {
+    width: 40%;
+    height: 80vh;
+    margin-top: calc(var(--headerHeight) + 3%);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiaryColour);
+    border-radius: 8px 0 0 8px;
+}
+.contact-main-form > * {
+    display: block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.contact-main-form h1 {
+    align-self: center;
+    margin-top: 1vh;
+    text-decoration: underline;
+    text-decoration-color: var(--hoverColour);
+    text-decoration-thickness: 3px;
+}
+.contact-main-form p {
+    margin-top: 1vh;
+    font-size: 2rem;
+}
+.contact-main-form ul {
+    margin-top: 0.2vh;
+    margin-left: 2vw;
+    margin-bottom: 0.4vh;
+    list-style: "\00BB";
+    font-size: 3rem;  
+    color: var(--primaryColour);
+    list-style-position: inside;
+}
+.contact-main-form ul li:first-child {
+    margin-bottom: 0.6vh;
+}
+.contact-main-form ul li a {
+    font-size: 2.1rem;
+}
+.contact-main-form ul li a:hover, .contact-main-form ul li a:focus {
+    color: var(--hoverColour);
+}
+.contact-main-form form {
+    margin-top: 2vh;
+    font-family: MontserratAlte rnates-Medium, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-left {
+    width: 48%;
+    height: 18vh;
+}
+.contact-vertical-line-form {
+    width: 0.4%;
+    margin: 0 1.8%;
+    height: 18vh;
+    background-color: var(--hoverColour);
+}
+.form-right {
+    width: 48%;
+    height: 18vh;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.label {
+    line-height: 3.4rem;
+}
+.input {
+    width: 100%;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 2% 1%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: lightgray;
+}
+.message-label {
+    margin-top: 1.2vh;
+}
+.message-input {
+    height: 14vh;
+}
+.submit {
+    
+}
+
+.contact-vertical-line-background {
+    width: 0.14%;
+    height: 80vh;
+    margin-top: calc(var(--headerHeight) + 3%);
+    background-color: var(--tertiaryColour);
+}
+.contact-vertical-line-line {
+    width: 100%;
+    height: 74vh;
+    margin-top: 3vh;
+    background-color: var(--hoverColour);
+}
+
+.contact-main-findus {
+    width: 26%;
+    height: 80vh;
+    margin-top: calc(var(--headerHeight) + 3%);
+    background-color: var(--tertiaryColour);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 8px 8px 0;
+}
+.contact-main-findus h2 {
+    align-self: center;
+    margin: 1.4vh 1vw;
+    text-decoration: underline;
+    text-decoration-color: var(--hoverColour);
+    font-size: 3rem;
+}
+.contact-main-findus p {
+    margin: 0 1vw 1vw;
+    font-size: 2rem;
+}
+.contact-main-findus a {
+    margin: 0 1vw;
+    width: fit-content;
+    padding-right: 2%;
+    color: var(--primaryColour);
+}
+.contact-main-findus a:hover, .contact-main-findus a:focus {
+    color: var(--hoverColour);
+}
+.contact-main-findus iframe {
+    align-self: center;
+    width: 92%;
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: 1vw;
 }

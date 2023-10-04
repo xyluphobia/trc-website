@@ -35,7 +35,7 @@ main h1 {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 0 25%;
+    padding: 0 12.5%;  /* padding 0 25% for 2 people */
 }
 .h2-agents {
     margin: 6vh 0 4vh 0;
@@ -46,6 +46,7 @@ main h1 {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    padding: 0 12.5%;
 }
 .h2-admin {
     margin: 8vh 0 4vh 0;
