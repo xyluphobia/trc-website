@@ -1,7 +1,7 @@
 main {
     width: 100%;
-    height: calc(108vh - var(--headerHeight));
-    margin-top: 3vh;
+    height: fit-content;
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
     background-color: var(--tertiaryColour);
@@ -12,15 +12,15 @@ main {
 
 .top-banner img {
     width: 100%;
-    height: 30vh;
+    height: 22vh;
     margin-top: var(--headerHeight);
     object-fit: cover;
-    object-position: 0 22%;
+    object-position: 0 21%;
 }
 
 .contact-main-form {
     width: 40%;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     background-color: var(--tertiaryColour);
@@ -33,7 +33,7 @@ main {
 }
 .contact-main-form h1 {
     align-self: center;
-    margin-top: 1vh;
+    margin-top: 0;
     text-decoration: underline;
     text-decoration-color: var(--hoverColour);
     text-decoration-thickness: 3px;
@@ -74,7 +74,7 @@ main {
 .contact-vertical-line-form {
     width: 0.4%;
     margin: 0 1.8%;
-    height: 18vh;
+    height: 19vh;
     background-color: var(--hoverColour);
 }
 .form-right {
@@ -98,30 +98,38 @@ main {
     background-color: lightgray;
 }
 .message-label {
-    margin-top: 1.2vh;
+    margin-top: 0;
 }
 .message-input {
     height: 14vh;
 }
 .submit {
-    
+    margin: 2.5vh 0 0 auto;
+    padding: 3px 6px 2px 4px;
+    border-radius: 4px;
+    background-color: var(--primaryColour);
+    color: var(--tertiaryColour);
+}
+.submit:hover, .submit:focus {
+    cursor: pointer;
+    background-color: var(--hoverColour);
 }
 
 .contact-vertical-line-background {
     width: 0.14%;
-    height: 80vh;
+    height: 71vh;
     background-color: var(--tertiaryColour);
 }
 .contact-vertical-line-line {
     width: 100%;
-    height: 74vh;
-    margin-top: 3vh;
+    height: 65vh;
+    margin-top: 2vh;
     background-color: var(--hoverColour);
 }
 
 .contact-main-findus {
     width: 26%;
-    height: 80vh;
+    height: 70vh;
     background-color: var(--tertiaryColour);
     display: flex;
     flex-direction: column;
@@ -135,7 +143,7 @@ main {
     font-size: 3rem;
 }
 .contact-main-findus p {
-    margin: 0 1vw 1vw;
+    margin: 0 1vw 0.6vw;
     font-size: 2rem;
 }
 .contact-main-findus a {
@@ -150,7 +158,6 @@ main {
 .contact-main-findus iframe {
     align-self: center;
     width: 92%;
-    height: 60%;
-    margin-top: auto;
-    margin-bottom: 1vw;
+    height: 61%;
+    margin-top: 1vh;
 }

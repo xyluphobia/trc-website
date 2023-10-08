@@ -116,7 +116,7 @@ main {
     line-height: 5rem;
     color: var(--secondaryColour);
     font-family: MaatRounded, Arial, Helvetica, sans-serif;
-    font-weight: 540;
+    font-weight: 500;
 }
 .index-customer-testimonials{
     margin: 2vh auto;

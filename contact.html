@@ -53,22 +53,23 @@
             <form>
                 <div class="form-left">
                     <label class="name-label label" for="name">Name*</label>                            <br>
-                    <input class="name-input input" type="text" id="name" name="name">                  <br>
+                    <input class="name-input input" type="text" id="name" name="name" required>         <br>
     
                     <label class="email-label label" for="email">Email*</label>                         <br>
-                    <input class="email-input input" type="text" id="email" name="email">               <br>
+                    <input class="email-input input" type="text" id="email" name="email" required>      <br>
                 </div>
                 <div class="contact-vertical-line-form"></div>
                 <div class="form-right">
+                    <label class="subject-label label" for="subject">Subject</label>                    <br>
+                    <input class="subject-input input" type="text" id="subject" name="subject">         <br>
+
                     <label class="org-label label" for="organization">Organization</label>              <br>
                     <input class="org-input input" type="text" id="organization" name="organization">   <br>
-    
-                    <label class="subject-label label" for="subject">Subject*</label>                   <br>
-                    <input class="subject-input input" type="text" id="subject" name="subject">         <br>
                 </div>
                 <div class="break"></div>
-                <label class="message-label label" for="message">Message*</label>                      <br>
-                <input class="message-input input" type="text" id="message" name="message">            <br><br>
+                <label class="message-label label" for="message">Message*</label>                       <br>
+                <textarea class="message-input input" type="text" id="message" name="message" 
+                maxlength="64" required></textarea>                                                     <br><br>
 
                 <input class="submit" type="submit" value="Submit">
             </form>
@@ -122,4 +123,28 @@
         </div>
     </footer>
 </body>
+
+<script>
+
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        for (item of formData) {
+            console.log(item[0], item[1]);
+        }
+
+        fetch('https://httpbin.org/post', {
+            method: "POST",
+            body: formData,
+        })
+            .then(res => res.json())
+            .then(res => console.log(res));
+    })
+
+</script>
+
 </html>
