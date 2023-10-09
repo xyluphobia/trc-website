@@ -55,7 +55,7 @@
                 <!-- Honey Pot + Disable Captcha + Thank You Page + Email Template + CC's -->
                 <input type="text" name="_honey" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://xyluphobia.github.io/trc-website/contact.html">
+                <input type="hidden" name="_next" value="https://xyluphobia.github.io/trc-website/contact.html?submit=true">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_cc" value="gabby@tririverconsultants.com">
                 <input type="hidden" name="_cc" value="mattscavone11@gmail.com">
@@ -79,7 +79,7 @@
                 <div class="break"></div>   
                 <label class="message-label label" for="message">Message*</label>                       <br>
                 <textarea class="message-input" type="text" id="message" name="message"
-                 cols="53" rows="4" required></textarea>                                                <br><br>
+                           rows="4" required></textarea>                                                <br><br>
 
                 <!-- Setting subject of recieved email -->
                 <input type="hidden" name="_subject" value="🌟 Website Contact">
@@ -147,22 +147,39 @@
 </body>
 
 <script>
-    function formSubmitted(event) {
-        e.preventDefault()
-        document.getElementById('thank-you-background').style.display = 'block';
-        document.getElementById('thank-you-text').style.display = 'flex';  
-    }
+    var qs = (function(a) {
+        if (a == "") return {};
+        var b = {};
+        for (var i = 0; i < a.length; ++i)
+        {
+            var p=a[i].split('=', 2);
+            if (p.length == 1)
+                b[p[0]] = "";
+            else
+                b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+        }
+        return b;
+    })(window.location.search.substr(1).split('&'));
 
-    var submitForm = document.getElementById('contact-form');
     var closeTyBtn = document.querySelector('.ty-close-submit')
-
-    submitForm.addEventListener("submit", formSubmitted); 
 
     closeTyBtn.addEventListener('click', function (e) {
         e.preventDefault()
         document.getElementById('thank-you-background').style.display = 'none';
         document.getElementById('thank-you-text').style.display = 'none';
     })
+
+    if (qs["submit"] === 'true') {
+        function formSubmitted(event) {
+            e.preventDefault()
+            document.getElementById('thank-you-background').style.display = 'block';
+            document.getElementById('thank-you-text').style.display = 'flex';  
+        }
+    
+        var submitForm = document.getElementById('contact-form');
+        
+        submitForm.addEventListener("submit", formSubmitted); 
+    }
 </script>
 
 </html>
