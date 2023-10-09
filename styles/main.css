@@ -38,6 +38,20 @@ a {
   font-family: MaatRounded, Arial, Helvetica, sans-serif;
   transition: all 0.3s ease 0s;
 }
+button {
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-family: MaatRounded, Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  background-color: var(--primaryColour);
+  color: var(--tertiaryColour);
+  padding: 0.3vw 0.5vw 0.1vw 0.4vw;
+  transition: all 0.3s ease 0s;
+}
+button:hover, button:focus {
+  background-color: var(--hoverColour);
+}
 h1{
   font-size: 4.2rem;
   line-height: 5rem;
