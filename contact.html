@@ -170,15 +170,8 @@
     })
 
     if (qs["submit"] === 'true') {
-        function formSubmitted(event) {
-            e.preventDefault()
-            document.getElementById('thank-you-background').style.display = 'block';
-            document.getElementById('thank-you-text').style.display = 'flex';  
-        }
-    
-        var submitForm = document.getElementById('contact-form');
-        
-        submitForm.addEventListener("submit", formSubmitted); 
+        document.getElementById('thank-you-background').style.display = 'block';
+        document.getElementById('thank-you-text').style.display = 'flex';  
     }
 </script>
 
