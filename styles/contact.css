@@ -20,7 +20,7 @@ main {
 
 .contact-main-form {
     width: 40%;
-    height: 70vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     background-color: var(--tertiaryColour);
@@ -101,7 +101,12 @@ main {
     margin-top: 0;
 }
 .message-input {
-    height: 14vh;
+    font-size: 2rem;
+    padding: 2% 1%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: lightgray;
+    word-wrap: break-word;
 }
 .submit {
     margin: 2.5vh 0 0 auto;
