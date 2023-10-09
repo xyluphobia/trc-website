@@ -51,6 +51,15 @@
             </ul>
             <P>Alternatively, fill out the form below and we will be in touch as soon as possible.</P>
             <form action="https://formsubmit.co/148d3607bbcac196a7b2e61e361dc5e0" method="POST">
+
+                <!-- Honey Pot + Disable Captcha + Thank You Page + Email Template + CC's -->
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://xyluphobia.github.io/trc-website/thanks.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_cc" value="mattscavone11@gmail.com">
+
+                <!-- Actual Form -->
                 <div class="form-left">
                     <label class="name-label label" for="name">Name*</label>                            <br>
                     <input class="name-input input" type="text" id="name" name="name" required>         <br>
@@ -71,7 +80,9 @@
                 <textarea class="message-input input" type="text" id="message" name="message" 
                 maxlength="64" required></textarea>                                                     <br><br>
 
-                <input type="hidden" name="_cc" value="mattscavone11@gmail.com">
+                <!-- Setting subject of recieved email -->
+                <input type="hidden" name="_subject" value="🌟 Website Contact">
+                
                 <input class="submit" type="submit" value="Submit">
             </form>
         </section>
