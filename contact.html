@@ -50,7 +50,7 @@
                     info@tririverconsultants.com</a></li>
             </ul>
             <P>Alternatively, fill out the form below and we will be in touch as soon as possible.</P>
-            <form>
+            <form action="https://formsubmit.co/info@tririverconsultants.com" method="POST">
                 <div class="form-left">
                     <label class="name-label label" for="name">Name*</label>                            <br>
                     <input class="name-input input" type="text" id="name" name="name" required>         <br>
@@ -123,28 +123,4 @@
         </div>
     </footer>
 </body>
-
-<script>
-
-    const form = document.querySelector('form');
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-
-        for (item of formData) {
-            console.log(item[0], item[1]);
-        }
-
-        fetch('https://httpbin.org/post', {
-            method: "POST",
-            body: formData,
-        })
-            .then(res => res.json())
-            .then(res => console.log(res));
-    })
-
-</script>
-
 </html>
