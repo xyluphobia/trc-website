@@ -44,21 +44,25 @@ main {
     color: var(--secondaryColour);
     z-index: 3;
 }
+.main-logo {
+    width: 15vw;
+    margin: 3vw 0 0 13vw;
+}
+.main-intro h1 {
+    margin: 5vw 0 0 4vw;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+    font-family: Alta-Caption, Arial, Helvetica, sans-serif;
+}
 .main-intro h2 {
-    margin: 24vh 0 0 4vw;
+    margin: 2vw 0 0 4vw;
     color: var(--primaryColour);
     font-size: 2.4rem;
     line-height: 2.8rem;
     font-family: Alta-Light, Arial, Helvetica, sans-serif;
 }
-.main-intro h1 {
-    margin: 7vh 0 0 4vw;
-    font-size: 4.4rem;
-    line-height: 5.2rem;
-    font-family: Alta-Caption, Arial, Helvetica, sans-serif;
-}
 .main-intro p {
-    margin: 4vh 12vw 0 4vw;
+    margin: 5vh 12vw 0 4vw;
     font-size: 2.2rem;
     line-height: 2.6rem;
     font-family: Arial, Helvetica, sans-serif; /* <--- EDIT FONT */
@@ -67,7 +71,8 @@ main {
     display: block;
     width: fit-content;
     block-size: fit-content;
-    margin: 6vh 4vw 0 4vw;
+    margin: 7vw 3vw 0 4vw;
+    float: right;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
     font-size: 2.2rem;
