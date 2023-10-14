@@ -33,7 +33,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 6px 6px 20px var(--secondaryColour);
+    box-shadow: 0.6rem 0.6rem 2rem var(--secondaryColour);
     z-index: 4;
 }
 
@@ -50,30 +50,33 @@ main {
     margin: 3vw 0 0 13vw;
 }
 .main-intro h1 {
-    margin: 4.4vw 0 0 4vw;
+    margin: 4vw 0 0 4vw;
     font-size: 4.4rem;
     font-family: Alta-Caption, Arial, Helvetica, sans-serif;
 }
 .main-intro h2 {
-    margin: 2vw 0 0 4vw;
+    margin: 2.2vw 0 0 4vw;
     color: var(--primaryColour);
     font-size: 2.4rem;
+    line-height: 1.4;
     font-family: Alta-Light, Arial, Helvetica, sans-serif;
 }
 .main-intro p {
     margin: 3vw 12vw 0 4vw;
     font-size: 2.2rem;
+    line-height: 1.2;
     font-family: Arial, Helvetica, sans-serif; /* <--- EDIT FONT */
 }
 .main-intro a {
     display: block;
     width: fit-content;
     block-size: fit-content;
-    margin: 7vw 3vw 0 4vw;
+    margin: 6.4vw 2.8vw 0 4vw;
     float: right;
-    padding: 3px 4px 3px 4px;
-    border-radius: 4px;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.4rem;
     font-size: 2.2rem;
+    line-height: 22px;
     background-color: var(--primaryColour);
     color: white;
     font-family: Alta-Regular, Arial, Helvetica, sans-serif;
@@ -108,7 +111,7 @@ main {
 }
 .h2-about {
     font-size: 3.6rem;
-    line-height: 0;
+    line-height: 1.5;
     text-align: center;
 }
 .hr-subhead {
@@ -121,7 +124,7 @@ main {
     /* adding this is a workaround to the hr's height being set to 0
        but I haven't found the underlying issue. */
     min-height: 2px;
-    margin: 2vw auto 0;
+    margin: 0.8vw auto 0;
 }
 .p-about {
     margin: 1vw 7% 0;
@@ -157,7 +160,7 @@ main {
     gap: 0.3%;
 }
 .give-feedback-section h3 {
-    margin-top: 0.2vw;
+    margin-top: 0.15vw;
     font-size: 2.2rem;
     line-height: 2.6rem;
 }
@@ -165,9 +168,10 @@ main {
     display: block;
     width: fit-content;
     block-size: fit-content;
-    padding: 4px 4px 4px 4px;
-    border-radius: 4px;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
     font-size: 2.2rem;
+    line-height: 22px;
     background-color: var(--primaryColour);
     color: white;
     transition: all 0.3s ease 0s;
@@ -175,4 +179,130 @@ main {
 }
 .give-feedback-button:hover, .give-feedback-button:focus {
     background-color: var(--hoverColour);
+}
+
+
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+  hr {
+    width: 88%;
+  }
+
+  main {
+    height: 140vw;
+    flex-direction: column;
+  }
+  .rotating-top-banner {
+    display: none;
+  }
+  .main-intro {
+    width: 100%;
+    height: fit-content;
+  }
+  .under-banner {
+    width: 96%;
+    margin: 0 2%;
+    height: 140vw;
+    border-radius: 3px;
+  }
+  .main-gradient {
+    display: none;
+  }
+
+  .main-logo {
+    width: 40vw;
+    margin: 2vw auto;
+    display: block;
+  }
+  .main-intro h1 {
+    display: none;
+  }
+  .main-intro h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .main-intro p {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0;
+    margin: 0.5vw 2vw;
+  }
+  .main-intro a {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin: 4vw 2vw 2vw 0
+  }
+
+
+  .section-about h2 {
+    font-size: 2.6rem;
+    margin-top: 22vw;
+  }
+  .span-so-about {
+    display: none;
+  }
+  .hr-subhead {
+    width: 88%;
+  }
+  .section-about p {
+    font-size: 1.6rem;
+    margin-top: 2.4vw;
+  }
+
+  .index-testimonials {
+    margin-top: 30vw;
+  }
+  .testimonials-top-heading {
+    font-size: 2.8rem;
+  }
+  .testimonials-sub-heading {
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+  .index-customer-testimonials {
+    margin: 2vw 3vw;
+  }
+  .give-feedback-section h3 {
+    font-size: 1.7rem;
+    margin-top: 0;
+  }
+  .give-feedback-section a {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    margin-top: 0.2vw;
+  }
+
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+
+  
+
+}
+
+@media only screen and (min-width: 601px) {
+
+  
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  
+
 }

@@ -118,6 +118,7 @@ hr {
 body {
   margin: 0;
   background-color: var(--tertiaryColour);
+  width: 100%;
 }
 body::after {  /* Used to preload images for transitions */
   position: absolute;
@@ -208,11 +209,12 @@ body::after {  /* Used to preload images for transitions */
 }
 .contact {
   font-size: 2rem;
+  line-height: 20px;
   margin-right: 2px;
   color: var(--tertiaryColour);
   background-color: var(--secondaryColour);
   border-radius: 10px;
-  padding: 2px 6px 2px 6px;
+  padding: 6px;
   font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
   transition: all 0.3s ease 0s;
 }
@@ -325,4 +327,99 @@ footer a:hover, footer a:focus {
 }
 .footer-a-heading {
   color: var(--primaryColour);
+}
+.footer-exp-logo {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+  .header-main-logo-nav {
+    padding-left: 1rem;
+  }
+  .header-main-nav {
+    display: none;
+  }
+  .header-main-socials {
+    padding-right: 0;
+  }
+  .socials_icons {
+    display: none;
+  }
+  .contact {
+    display: block;
+  }
+
+  footer hr {
+    margin: 1.4vw auto;
+  }
+  .footer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content 1fr;
+  }
+  .footer-text {
+    display: none;
+  }
+  .footer-sitemap {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border-left: 0;
+    border-right: 2px solid var(--hoverColour);
+    padding: 0 5% 0 0;
+    text-align: right;
+    margin-left: 8vw;
+    margin-top: 4vw;
+  }
+  .footer-address{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin: 0 0 1vw 4vw
+  }
+  .footer-contact {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 1vw 0 0 4vw;
+  }
+  .footer-exp-logo {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 20vw;
+    margin-left: 23vw;
+    display: block;
+    width: 40%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+
+  
+
+}
+
+@media only screen and (min-width: 601px) {
+
+  
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+
 }
