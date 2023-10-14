@@ -1,7 +1,7 @@
 main {
     width: 100%;
     height: fit-content;
-    margin-top: 2vh;
+    margin-top: 1.2vw;
     display: flex;
     justify-content: center;
     background-color: var(--tertiaryColour);
@@ -13,7 +13,7 @@ main {
     z-index: 100000;
     position: fixed;
     width: 100%;
-    height: 133vh;
+    height: 68vw;
     top: 0%;
     background-color: var(--secondaryColour);
     opacity: 0.7;
@@ -22,7 +22,7 @@ main {
 #thank-you-text {
     z-index: 100001;
     width: 100%;
-    height: 40vh;
+    height: 20vw;
     top: 25%;
     position: absolute;
     background-color: var(--tertiaryColour);
@@ -49,7 +49,7 @@ main {
 
 .top-banner img {
     width: 100%;
-    height: 22vh;
+    height: 10vw;
     margin-top: var(--headerHeight);
     object-fit: cover;
     object-position: 0 21%;
@@ -76,20 +76,20 @@ main {
     text-decoration-thickness: 3px;
 }
 .contact-main-form p {
-    margin-top: 1vh;
+    margin-top: 0.4vw;
     font-size: 2rem;
 }
 .contact-main-form ul {
-    margin-top: 0.2vh;
+    margin-top: 0.1vw;
     margin-left: 2vw;
-    margin-bottom: 0.4vh;
+    margin-bottom: 0.2vw;
     list-style: "\00BB";
     font-size: 3rem;  
     color: var(--primaryColour);
     list-style-position: inside;
 }
 .contact-main-form ul li:first-child {
-    margin-bottom: 0.6vh;
+    margin-bottom: 0.3vw;
 }
 .contact-main-form ul li a {
     font-size: 2.1rem;
@@ -98,7 +98,7 @@ main {
     color: var(--hoverColour);
 }
 .contact-main-form form {
-    margin-top: 2vh;
+    margin-top: 1vw;
     font-family: MontserratAlte rnates-Medium, Arial, Helvetica, sans-serif;
     font-size: 2rem;
     display: flex;
@@ -106,17 +106,17 @@ main {
 }
 .form-left {
     width: 48%;
-    height: 18vh;
+    height: 9vw;
 }
 .contact-vertical-line-form {
     width: 0.4%;
     margin: 0 1.8%;
-    height: 19vh;
+    height: 9vw;
     background-color: var(--hoverColour);
 }
 .form-right {
     width: 48%;
-    height: 18vh;
+    height: 9vw;
 }
 .break {
     flex-basis: 100%;
@@ -161,19 +161,19 @@ main {
 
 .contact-vertical-line-background {
     width: 0.14%;
-    height: 74vh;
+    height: 31vw;
     background-color: var(--tertiaryColour);
 }
 .contact-vertical-line-line {
     width: 100%;
-    height: 74vh;
+    height: 31vw;
     margin-top: 2vh;
     background-color: var(--hoverColour);
 }
 
 .contact-main-findus {
     width: 26%;
-    height: 37vw;
+    height: 33vw;
     background-color: var(--tertiaryColour);
     display: flex;
     flex-direction: column;
@@ -181,7 +181,7 @@ main {
 }
 .contact-main-findus h2 {
     align-self: center;
-    margin: 1.4vh 1vw;
+    margin: 0.7vw 1vw;
     text-decoration: underline;
     text-decoration-color: var(--hoverColour);
     font-size: 3rem;
@@ -203,6 +203,6 @@ main {
     align-self: center;
     width: 92%;
     height: 61%;
-    margin-top: 1vh;
+    margin-top: 0.4vw;
     margin-bottom: 0;
 }

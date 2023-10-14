@@ -9,8 +9,8 @@ main {
 }
 
 main h1 {
-    margin-top: 3vh;
-    margin-bottom: 1vh;
+    margin-top: 1.5vw;
+    margin-bottom: 0.5vw;
 }
 .hr-subhead {
     border: 0;
@@ -27,7 +27,7 @@ main h1 {
 
 
 .h2-leadership {
-    margin: 2vh 0 4vh 0;
+    margin: 1vw 0 2vw 0;
     text-decoration: underline;
     text-decoration-color: var(--hoverColour);
 }
@@ -38,7 +38,7 @@ main h1 {
     padding: 0 12.5%;  /* padding 0 25% for 2 people */
 }
 .h2-agents {
-    margin: 6vh 0 4vh 0;
+    margin: 3vw 0 2vw 0;
     text-decoration: underline;
     text-decoration-color: var(--hoverColour);
 }
@@ -49,7 +49,7 @@ main h1 {
     padding: 0 12.5%;
 }
 .h2-admin {
-    margin: 8vh 0 4vh 0;
+    margin: 4vw 0 2vw 0;
     text-decoration: underline;
     text-decoration-color: var(--hoverColour);
 }
@@ -99,26 +99,17 @@ main h1 {
 }
 
 /* BELOW PORTRAITS */
-.h2-about {
-    margin: 12vh 0 5vh;
-    font-size: 3.6rem;
-    line-height: 0;
-}
-.p-about {
-    margin: 5vh 7% 0;
-}
-
 .h2-whyus {
-    margin: 7vh 0 5vh;
+    margin: 3vw 0 2vw;
     font-size: 3.6rem;
     line-height: 0;
 }
 .p-whyus {
-    margin: 4vh 7% 0;
+    margin: 2vw 7% 0;
 }
 
 .a-forbuyers {
-    margin: 5vh 12% 0;
+    margin: 2vw 12% 0;
     font-size: 3.2rem;
     line-height: 0;
     align-self: flex-start;
@@ -127,10 +118,10 @@ main h1 {
     font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
 }
 .p-forbuyers {
-    margin: 5vh 10% 0;
+    margin: 2vw 10% 0;
 }
 .a-forsellers {
-    margin: 5vh 12% 0;
+    margin: 2vw 12% 0;
     font-size: 3.2rem;
     line-height: 0;
     align-self: flex-start;
@@ -139,5 +130,5 @@ main h1 {
     font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
 }
 .p-forsellers {
-    margin: 4vh 10% 0;
+    margin: 2vw 10% 0;
 }
