@@ -211,7 +211,54 @@ main {
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
 
+  .burger-menu {
+    margin-top: var(--headerHeight);
+  }
+  .top-banner img {
+    height: 18vw;
+  }
+  main {
+    flex-direction: column;
+    height: fit-content;
+  }
+
   
+  .contact-main-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact-main-form ul {
+    margin-bottom: 3vw;
+    margin-top: 2vw;
+  }
+  .contact-main-form form {
+    margin-top: 4vw;
+  }
+  .contact-vertical-line-form {
+    height: 34vw;
+  }
+
+  .contact-vertical-line-background {
+    display: none;
+  }
+  .contact-main-findus {
+    width: 90%;
+    height: fit-content;
+    margin: 4vw auto 2vw;
+  }
+  .contact-main-findus p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .contact-main-findus a {
+    font-size: 2rem;
+    margin-top: 2vw;
+  }
+  .contact-main-findus iframe {
+    width: 100%;
+    height: 90vw;
+    margin-top: 2vw;
+  }
 
 }
 

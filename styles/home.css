@@ -223,12 +223,13 @@ main {
     text-align: center;
     padding: 0;
     margin: 0;
+    font-family: Alta-Regular, Arial, Helvetica, sans-serif;
   }
   .main-intro p {
     font-size: 1.4rem;
     text-align: center;
     padding: 0;
-    margin: 0.5vw 2vw;
+    margin: 0.5vw 2.6vw;
   }
   .main-intro a {
     font-size: 1.8rem;
@@ -268,6 +269,7 @@ main {
   .give-feedback-section h3 {
     font-size: 1.7rem;
     margin-top: 0;
+    margin-left: 2vw;
   }
   .give-feedback-section a {
     font-size: 1.7rem;
