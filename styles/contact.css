@@ -211,6 +211,9 @@ main {
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
 
+  .contact {
+    color: var(--primaryColour);
+  }
   .burger-menu {
     margin-top: var(--headerHeight);
   }

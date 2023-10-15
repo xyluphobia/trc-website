@@ -18,6 +18,15 @@
   font-family: 'Alta-Regular';
   src: url(../fonts/Alta_regular.woff2);
 }
+@font-face {
+  font-family: 'Givonic-Light';
+  src: url(../fonts/Givonic-Light.woff2);
+}
+@font-face {
+  font-family: 'Givonic-Regular';
+  src: url(../fonts/Givonic-Regular.woff2);
+}
+
 :root {
   --primaryColour: #e2ccc0; /* #e7ded9 {from ad}, #EEB698 {coral}, #F7D192 {yellow}, #6B7178 {gray} */
   --secondaryColour: #221f2a; 
