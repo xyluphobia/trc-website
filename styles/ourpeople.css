@@ -124,6 +124,15 @@ main h1 {
 }
 
 
+.team-member-profiles-row1-mobile, .team-member-profiles-row2-mobile, .team-member-profiles-row3-mobile {
+    display: none;
+    width: fit-content;
+    justify-content: row;
+    gap: 6vw;
+    margin-top: 3vw;
+}
+
+
 @media only screen and (max-width: 600px) and (orientation: portrait) {
 
     main h1 {
@@ -138,22 +147,32 @@ main h1 {
     }
 
 
+    .team-member-profiles-row1, .team-member-profiles-row2 {
+        display: none;
+    }
+    .team-member-profiles-row1-mobile, .team-member-profiles-row2-mobile, .team-member-profiles-row3-mobile {
+        display: flex;
+    }
+    .team-member-profiles-row1-mobile {
+        margin-top: 5vw;
+    }
     .team-member-headshot {
-        width: 16vw; /* this should be at least the same width as the headshot image */
+        width: 22vw; /* this should be at least the same width as the headshot image */
         height: fit-content;
         text-align: center;
     }
     .img-headshot {
-        width: 14vw;
-        height: 14vw;
+        width: 20vw;
+        height: 20vw;
     }
     .team-member-headshot h4 {
-        font-size: 1.6rem;
-        line-height: 1.8rem;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
     }
     .team-member-headshot p {
-        font-size: 1.4rem;
-        line-height: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        margin-top: 1vw;
     }
 
 
