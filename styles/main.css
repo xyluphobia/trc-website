@@ -403,13 +403,13 @@ footer a:hover, footer a:focus {
   .burger-trc-logo {
     width: 70%;
     display: block;
-    margin: 8% auto;
+    margin: 6% auto;
   }
   .burger-socials-wrapper {
     display: flex;
     justify-content: center;
     gap: 24vw;
-    margin-top: 16%;
+    margin-top: 14%;
     padding-top: 8.5%;
     border-top: 2px solid var(--primaryColour);
   }

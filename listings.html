@@ -13,28 +13,44 @@
 </head>
 
 <body>
+    <!-- Burger menu start -->
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="./index">Home</a></li>
+            <li><a href="./meetus">Meet Us</a></li>
+            <li><a href="./listings">Find A Home</a></li>
+        </ul>
+        <a href="./index"><img class="burger-trc-logo" src="images/new-logo-white-crop.png" alt="Tri-River Consultants logo."></a>
+        <div class="burger-socials-wrapper">
+            <a href="https://www.facebook.com/Trianglerealtors/" target="_blank"><div class="social-icons-burger fb_icon"></div></a>
+            <a href="https://www.instagram.com/tririverconsultants/?hl=en" target="_blank"><div class="social-icons-burger ig_icon"></div></a>
+        </div>
+    </nav>
+    <!-- Burger menu end -->
+
     <header class="header-main">
 
         <div class="header-main-logo-nav">
-            <a href="./"><img src="images/new-logo-small-white.png" alt="TriRiver Consultants Logo" class="logo_nav"></a>
+            <a href="./index"><img src="images/new-logo-small-white.png" alt="TriRiver Consultants Logo" class="logo_nav"></a>
             <nav class="header-main-nav">
-            <ul>
-                <li><a href="./" id="home_nav">Home</a></li>
-                <li><div class="header-vertical-line"></div></li>
-                <li><a href="./meetus" id="people_nav">Meet Us</a></li>
-                <li><div class="header-vertical-line"></div></li>
-                <li><a href="./listings" id="listings_nav" class="active">Find A Home</a></li>
-            </ul>
-        </nav>
-            
+                <ul>
+                    <li><a href="./index">Home</a></li>
+                    <li><div class="header-vertical-line"></div></li>
+                    <li><a href="./meetus">Meet Us</a></li>
+                    <li><div class="header-vertical-line"></div></li>
+                    <li><a href="./" class="active">Find A Home</a></li>
+                </ul>
+            </nav>
         </div>
         
         <div class="header-main-socials">
             <a href="./contact" class="contact">Contact Us</a>
-            <a href="https://www.facebook.com/Trianglerealtors/" target="_blank"><div class="socials_icons" id="fb_icon"></div></a>
-            <a href="https://www.instagram.com/tririverconsultants/?hl=en" target="_blank"><div class="socials_icons" id="ig_icon"></div></a>
+            <a href="https://www.facebook.com/Trianglerealtors/" target="_blank"><div class="socials_icons fb_icon"></div></a>
+            <a href="https://www.instagram.com/tririverconsultants/?hl=en" target="_blank"><div class="socials_icons ig_icon"></div></a>
+            <div class="burger-menu-button"></div>
         </div>
     </header>
+
 
     <main> 
         <h1>our listings</h1>
@@ -74,5 +90,8 @@
 
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
 </html>
