@@ -229,18 +229,18 @@ body::after {  /* Used to preload images for transitions */
   color: var(--hoverColour);
 }
 
-#fb_icon { 
+.fb_icon { 
   background-image: url(../images/social-icons/facebook-bw.png);
   transition: all 0.3s ease 0s;
 }
-#fb_icon:hover, #fb_icon:focus { 
+.fb_icon:hover, .fb_icon:focus { 
   background-image: url(../images/social-icons/facebook.png);
 }
-#ig_icon { 
+.ig_icon { 
   background-image: url(../images/social-icons/instagram-bw.png);
   transition: all 0.3s ease 0s;
 }
-#ig_icon:hover, #ig_icon:focus { 
+.ig_icon:hover, .ig_icon:focus { 
   background-image: url(../images/social-icons/instagram.png);
 }
 
@@ -403,13 +403,13 @@ footer a:hover, footer a:focus {
   .burger-trc-logo {
     width: 70%;
     display: block;
-    margin: 12% auto;
+    margin: 8% auto;
   }
   .burger-socials-wrapper {
     display: flex;
     justify-content: center;
     gap: 24vw;
-    margin-top: 20%;
+    margin-top: 16%;
     padding-top: 8.5%;
     border-top: 2px solid var(--primaryColour);
   }
@@ -427,7 +427,7 @@ footer a:hover, footer a:focus {
   .footer-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: fit-content 1fr;
+    grid-template-rows: 0.5fr 1fr;
   }
   .footer-text {
     display: none;
