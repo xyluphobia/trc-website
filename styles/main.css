@@ -439,7 +439,7 @@ footer a:hover, footer a:focus {
     border-right: 2px solid var(--hoverColour);
     padding: 0 5% 0 0;
     text-align: right;
-    margin-left: 8vw;
+    margin-left: 14vw;
     margin-top: 4vw;
   }
   .footer-address{
