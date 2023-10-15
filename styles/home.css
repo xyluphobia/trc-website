@@ -65,7 +65,7 @@ main {
     margin: 2.8vw 12vw 0 4vw;
     font-size: 2.2rem;
     line-height: 1.2;
-    font-family: Givonic-Light, Arial, Helvetica, sans-serif; /* <--- EDIT FONT */
+    font-family: Givonic-Light, Arial, Helvetica, sans-serif;
 }
 .main-intro a {
     display: block;
