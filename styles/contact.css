@@ -227,24 +227,45 @@ main {
     width: 90%;
     margin: 0 auto;
   }
+  .contact-main-form h1 {
+    font-size: 3.4rem;
+  }
+  .contact-main-form p {
+    font-size: 1.8rem;
+  }
   .contact-main-form ul {
     margin-bottom: 3vw;
     margin-top: 2vw;
   }
+  .contact-main-form ul li a {
+    font-size: 2rem;
+  }
   .contact-main-form form {
     margin-top: 4vw;
+  }
+  .label {
+    font-size: 1.95rem;
+  }
+  .input {
+    font-size: 1.8rem;
   }
   .contact-vertical-line-form {
     height: 150px;
   }
 
+
   .contact-vertical-line-background {
     display: none;
   }
+
+
   .contact-main-findus {
     width: 90%;
     height: fit-content;
     margin: 4vw auto 2vw;
+  }
+  .contact-main-findus h2 {
+    font-size: 3.4rem;
   }
   .contact-main-findus p {
     font-size: 1.8rem;
