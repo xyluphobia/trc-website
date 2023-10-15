@@ -42,7 +42,7 @@
 a {
   cursor: pointer;
   font-size: 2.4rem;
-  line-height: 2.8rem;
+  line-height: 1.17;
   color: var(--secondaryColour);
   font-family: MaatRounded, Arial, Helvetica, sans-serif;
   transition: all 0.3s ease 0s;
@@ -50,7 +50,7 @@ a {
 button {
   cursor: pointer;
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 1.2;
   font-family: MaatRounded, Arial, Helvetica, sans-serif;
   border-radius: 4px;
   background-color: var(--primaryColour);
@@ -269,14 +269,14 @@ footer hr {
 }
 footer p {
   font-size: 1.4rem;
-  line-height: 2.4rem;
+  line-height: 1.7;
 }
 footer h3 {
   font-size: 1.8rem;
 }
 footer a {
   font-size: 1.8rem;
-  line-height: 3.4rem;
+  line-height: 1.88;
 }
 footer a:hover, footer a:focus {
   color: var(--hoverColour);
@@ -362,7 +362,7 @@ footer a:hover, footer a:focus {
   }
   .contact {
     font-size: 1.6rem;
-    line-height: 1.6rem;
+    line-height: 1;
   }
   .burger-menu-button {
     display: block;

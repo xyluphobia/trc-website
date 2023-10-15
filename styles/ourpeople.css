@@ -52,11 +52,13 @@ main h1 {
 }
 .team-member-headshot h4 {
     font-size: 2.4rem;
+    line-height: 1.1;
     font-family: Givonic-Light, Arial, Helvetica, sans-serif;
 }
 .team-member-headshot p {
     color: var(--primaryColour);
     font-size: 2rem;
+    line-height: 1.2;
 }
 
  /* object-position is used to shift the image to the correct spot within it's container. */
@@ -138,7 +140,7 @@ main h1 {
 
     main h1 {
         font-size: 3.4rem;
-        line-height: 3.4rem;
+        line-height: 1;
         margin-bottom: 0;
         margin-top: 4.6vw;
     }
@@ -168,18 +170,18 @@ main h1 {
     }
     .team-member-headshot h4 {
         font-size: 1.6rem;
-        line-height: 1.7rem;
+        line-height: 1.08;
     }
     .team-member-headshot p {
         font-size: 1.4rem;
-        line-height: 1.5rem;
+        line-height: 1.08;
         margin-top: 1vw;
     }
 
 
     .h2-whyus {
         font-size: 3.4rem;
-        line-height: 3.2rem;
+        line-height: 0.9;
         margin-top: 10vw;
     }
     .span-whyus-shouldyou {
@@ -187,7 +189,7 @@ main h1 {
     }
     .p-whyus {
         font-size: 1.8rem;
-        line-height: 2.2rem;
+        line-height: 1.3;
         text-align: center;
         margin-top: 3vw;
     }
@@ -198,7 +200,7 @@ main h1 {
     }
     .p-forbuyers {
         font-size: 1.8rem;
-        line-height: 2.2rem;
+        line-height: 1.3;
         text-align: center;
         margin-top: 6vw;
     }
@@ -209,7 +211,7 @@ main h1 {
     }
     .p-forsellers{
         font-size: 1.8rem;
-        line-height: 2.2rem;
+        line-height: 1.3;
         text-align: center;
         margin-top: 6vw;
     }
