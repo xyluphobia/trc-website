@@ -40,7 +40,7 @@ main h1 {
     gap: 2.6vw;
 }
 .team-member-headshot {
-    width: 12vw; /* this should be the same width as the headshot image */
+    width: 12vw; /* this should be at least the same width as the headshot image */
     height: fit-content;
     text-align: center;
 }
@@ -99,6 +99,7 @@ main h1 {
     align-self: flex-start;
     color: var(--primaryColour);
     text-decoration: underline;
+    text-decoration-color: var(--hoverColour);
     font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
     z-index: 15;
 }
@@ -113,6 +114,7 @@ main h1 {
     align-self: flex-start;
     color: var(--primaryColour);
     text-decoration: underline;
+    text-decoration-color: var(--hoverColour);
     font-family: MontserratAlternates-Medium, Arial, Helvetica, sans-serif;
     z-index: 15;
 }
@@ -120,3 +122,106 @@ main h1 {
     margin: 2vw 10% 0;
     z-index: 15;
 }
+
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+    main h1 {
+        font-size: 3.4rem;
+        line-height: 3.4rem;
+        margin-bottom: 0;
+        margin-top: 4.6vw;
+    }
+    .hr-subhead {
+        width: 71%;
+        margin-top: 1vw;
+    }
+
+
+    .team-member-headshot {
+        width: 16vw; /* this should be at least the same width as the headshot image */
+        height: fit-content;
+        text-align: center;
+    }
+    .img-headshot {
+        width: 14vw;
+        height: 14vw;
+    }
+    .team-member-headshot h4 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+    .team-member-headshot p {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+
+
+    .h2-whyus {
+        font-size: 3.4rem;
+        line-height: 3.2rem;
+        margin-top: 10vw;
+    }
+    .span-whyus-shouldyou {
+        display: none;
+    }
+    .p-whyus {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        text-align: center;
+        margin-top: 3vw;
+    }
+    .a-forbuyers {
+        margin: 8vw 7% 0;
+        font-size: 2.6rem;
+        text-decoration-thickness: 2px;
+    }
+    .p-forbuyers {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        text-align: center;
+        margin-top: 6vw;
+    }
+    .a-forsellers {
+        margin: 7vw 7% 0;
+        font-size: 2.6rem;
+        text-decoration-thickness: 2px;
+    }
+    .p-forsellers{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        text-align: center;
+        margin-top: 6vw;
+    }
+
+  }
+  
+  @media only screen and (max-width: 600px) and (orientation: landscape) {
+  
+    
+  
+  }
+  
+  @media only screen and (min-width: 601px) {
+  
+    
+  
+  }
+  
+  @media only screen and (min-width: 768px) {
+  
+    
+  
+  }
+  
+  @media only screen and (min-width: 992px) {
+  
+    
+  
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  
+    
+  
+  }
