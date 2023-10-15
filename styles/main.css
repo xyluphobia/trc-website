@@ -233,14 +233,14 @@ body::after {  /* Used to preload images for transitions */
   background-image: url(../images/social-icons/facebook-bw.png);
   transition: all 0.3s ease 0s;
 }
-#fb_icon:hover { 
+#fb_icon:hover, #fb_icon:focus { 
   background-image: url(../images/social-icons/facebook.png);
 }
 #ig_icon { 
   background-image: url(../images/social-icons/instagram-bw.png);
   transition: all 0.3s ease 0s;
 }
-#ig_icon:hover { 
+#ig_icon:hover, #ig_icon:focus { 
   background-image: url(../images/social-icons/instagram.png);
 }
 
@@ -332,7 +332,9 @@ footer a:hover, footer a:focus {
   display: none;
 }
 
-
+.burger-menu-button, .burger-menu {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
 
@@ -344,13 +346,81 @@ footer a:hover, footer a:focus {
   }
   .header-main-socials {
     padding-right: 0;
+    column-gap: 1.4vw;
   }
   .socials_icons {
     display: none;
   }
   .contact {
-    display: block;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
   }
+  .burger-menu-button {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin-right: 3.6vw;
+    background-image: url(../images/icons/burger-menu-open.png), url(../images/icons/burger-menu-close.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center left 50px;
+  }
+  .burger-menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 105;
+    background-color: var(--tertiaryColour);
+  }
+  .burger-menu ul {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-top: 9%;
+    border-top: 2px solid var(--primaryColour);
+  }
+  .burger-menu ul li {
+    flex-basis: 100%;
+    margin: 0 6%;
+    border-top: 2px solid var(--secondaryColour);
+  }
+  .burger-menu ul li:first-child {
+    flex-basis: 100%;
+    margin: 0 6%;
+    border-top: 0;
+  }
+  .burger-menu ul li a {
+    display: block;
+    height: 100%;
+    font-size: 3rem;
+    padding: 30px 0;
+    flex-basis: 100%;
+    text-align: center;
+    color: var(--secondaryColour);
+  }
+  .burger-trc-logo {
+    width: 70%;
+    display: block;
+    margin: 18% auto;
+  }
+  .burger-socials-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24vw;
+    margin-top: 25%;
+    padding-top: 8.5%;
+    border-top: 2px solid var(--primaryColour);
+  }
+  .social-icons-burger {
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 
   footer hr {
     margin: 1.4vw auto;
