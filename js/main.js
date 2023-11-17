@@ -1,5 +1,6 @@
 let burgerBtn = document.querySelector(".burger-menu-button");
 let burgerMenu = document.querySelector(".burger-menu");
+let testimonials = document.querySelector(".index-testimonials");
 
 let isBurgerOpen = false;
 
@@ -27,11 +28,13 @@ burgerBtn.onclick = function () {
         burgerBtn.style.backgroundPosition = "center left 50px, center";
         isBurgerOpen = true;
         disableScroll();
+        testimonials.style.display = "none";
     }
     else if (isBurgerOpen) {
         burgerMenu.style.display = "none";
         burgerBtn.style.backgroundPosition = "center, center left 50px";
         isBurgerOpen = false;
         enableScroll();
+        testimonials.style.display = "block";
     }
 }
