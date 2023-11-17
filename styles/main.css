@@ -320,6 +320,9 @@ footer a:hover, footer a:focus {
   align-self: center;
   margin: 2vh 3%;
 }
+#footer-text-brokeredBy {
+  float: right;
+}
 .footer-contact {
   width: fit-content;
   height: fit-content;
