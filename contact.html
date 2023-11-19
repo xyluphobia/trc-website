@@ -67,7 +67,7 @@
                     info@tririverconsultants.com</a></li>
             </ul>
             <P>Alternatively, fill out the form below and we will be in touch within 24 hours.</P>
-            <form action="https://formsubmit.co/info@tririverconsultants.com" method="POST" id="contact-form">
+            <form action="https://formsubmit.co/info@tririverconsultants.com" method="POST" id="contact-form" onSubmit="return setSubject()">
 
                 <!-- Honey Pot + Disable Captcha + Thank You Page + Email Template + CC's -->
                 <input type="text" name="_honey" style="display: none;">
@@ -82,7 +82,7 @@
                     <input class="name-input input" type="text" id="name" name="name" required>         <br>
     
                     <label class="email-label label" for="email">Email*</label>                         <br>
-                    <input class="email-input input" type="text" id="email" name="email" required>      <br>
+                    <input class="email-input input" type="email" id="email" name="email" required>      <br>
                 </div>
                 <div class="contact-vertical-line-form"></div>
                 <div class="form-right">
@@ -98,7 +98,7 @@
                            rows="4" required></textarea>                                                <br><br>
 
                 <!-- Setting subject of recieved email -->
-                <input type="hidden" name="_subject" value="🌟 Website Contact">
+                <input type="hidden" name="_subject" value="🌟📃 ~ Website Contact" id="subjectEmail">
                 
                 <input class="submit" type="submit" value="Submit">
             </form>
@@ -167,6 +167,20 @@
 </body>
 
 <script>
+    setSubject = () => {
+        let formSubject = document.querySelector("#subject");
+        let formOrg = document.querySelector("#organization");
+        let emailSubject = document.querySelector("#subjectEmail");
+        if (formSubject.value.length > 0) {
+            emailSubject.value = "🌟📃 ~ " + formSubject.value;
+            if (formOrg.value.length > 0) {
+                emailSubject.value = emailSubject.value + " | 🏦 Organization: " + formOrg.value;
+            }
+        }
+        return "🌟📃 ~ Website Contact";
+    }; 
+
+
     var qs = (function(a) {
         if (a == "") return {};
         var b = {};
