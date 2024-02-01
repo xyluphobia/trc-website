@@ -238,6 +238,21 @@ body::after {  /* Used to preload images for transitions */
   color: var(--hoverColour);
 }
 
+.phone_icon { 
+  background-image: url(../images/social-icons/phone-bw.png);
+  transition: all 0.3s ease 0s;
+}
+.phone_icon:hover, .phone_icon:focus { 
+  background-image: url(../images/social-icons/phone.png);
+}
+.email_icon { 
+  background-image: url(../images/social-icons/email-bw.png);
+  transition: all 0.3s ease 0s;
+}
+.email_icon:hover, .email_icon:focus { 
+  background-image: url(../images/social-icons/email.png);
+}
+
 .fb_icon { 
   background-image: url(../images/social-icons/facebook-bw.png);
   transition: all 0.3s ease 0s;
@@ -251,6 +266,13 @@ body::after {  /* Used to preload images for transitions */
 }
 .ig_icon:hover, .ig_icon:focus { 
   background-image: url(../images/social-icons/instagram.png);
+}
+.linkedin_icon { 
+  background-image: url(../images/social-icons/linkedin-bw.png);
+  transition: all 0.3s ease 0s;
+}
+.linkedin_icon:hover, .linkedin_icon:focus { 
+  background-image: url(../images/social-icons/linkedin.png);
 }
 
 
