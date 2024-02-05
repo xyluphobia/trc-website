@@ -42,6 +42,7 @@ main h1 {
 .team-member-headshot {
     width: 12vw; /* this should be at least the same width as the headshot image */
     height: fit-content;
+    max-height: 270px;
     text-align: center;
 }
 .img-headshot {
@@ -60,95 +61,23 @@ main h1 {
     font-size: 2rem;
     line-height: 1.2;
 }
-/* Pop up 1 start */
-.moreinfo2 {
-    width: 300px;
-    height: 340px;
-    border-radius: 3px;
-    border: 1px solid var(--primaryColour);
-    position: absolute;
-    top: 20%;
-    left: 26.5%;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 12% 72% 16%;
 
-    background-color: #fafafa;
-}
-.moreinfo2 h4 {
-    padding-top: 4%;
-    align-self: center;
-    color: var(--secondaryColour);
-    text-decoration: underline;
-    text-decoration-color: var(--primaryColour);
-    text-decoration-thickness: 2px;
-}
-.moreinfo2 p {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    padding: 0 10px;
-    align-self: center;
-    font-size: 1.4rem;
-    color: var(--secondaryColour);
-}
-.moreinfo2 h3 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    padding-top: 3%;
-    align-self: center;
-    font-size: 2.4rem;
-    text-decoration: underline;
-    text-decoration-color: var(--primaryColour);
-    text-decoration-thickness: 2px;
-    color: var(--secondaryColour);
-    font-family: MaatRounded, Arial, Helvetica, sans-serif;
-    border-top: 1px solid var(--primaryColour);
-}
-.moreinfo2-contact-aside {
-    padding: 10% 0;
-    border-radius: 0 3px 3px 0;
-    border-left: 1px solid var(--primaryColour);
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 2.5%;
-
-    background-color: #fafafa;
-}
-.moreinfo2-traditional-bar {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-}
-.moreinfo2-social-bar {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-}
-.agent-socials2 {
-    width: 42px;
-    height: 42px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* pop up 1 end */
-/* pop up 2 start */
+/* pop up start */
 .moreinfo {
     display: none; /* swap to 'grid' when need to see */
 
+    z-index: 1;
+    position: relative;
+    top: -300px;
+    left: 80%;
+
     width: 300px;
     height: 340px;
+
     border-radius: 3px;
     border: 1px solid var(--primaryColour);
-    position: absolute;
-    top: 20%;
-    left: 50%;
     grid-template-columns: 80% 20%;
     grid-template-rows: 10% 10% 80%;
-
     background-color: #fafafa;
 }
 .moreinfo h4 {
@@ -213,7 +142,7 @@ main h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* pop up 2 end */
+/* pop up end */
 
  /* object-position is used to shift the image to the correct spot within it's container. */
 #gabby-murillo img { 
@@ -240,7 +169,7 @@ main h1 {
 
 /* BELOW PORTRAITS */
 .h2-whyus {
-    margin: 3vw 0 2vw;
+    margin: 3vw 0 max(22px, 2vw);
     font-size: 3.6rem;
     line-height: 0;
 }
@@ -334,9 +263,10 @@ main h1 {
 
 
     .h2-whyus {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
         line-height: 0.9;
         margin-top: 10vw;
+        margin-bottom: 2vw;
     }
     .span-whyus-shouldyou {
         display: none;
