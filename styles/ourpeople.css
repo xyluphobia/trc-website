@@ -210,7 +210,7 @@ main h1 {
 }
 
 
-.team-member-profiles-row1-mobile, .team-member-profiles-row2-mobile, .team-member-profiles-row3-mobile {
+.team-member-profiles-row1-mobile, .team-member-profiles-row2-mobile, .team-member-profiles-row3-mobile, .team-member-profiles-row4-mobile {
     display: none;
     width: fit-content;
     justify-content: row;
@@ -236,7 +236,7 @@ main h1 {
     .team-member-profiles-row1, .team-member-profiles-row2 {
         display: none;
     }
-    .team-member-profiles-row1-mobile, .team-member-profiles-row2-mobile, .team-member-profiles-row3-mobile {
+    .team-member-profiles-row1-mobile, .team-member-profiles-row2-mobile, .team-member-profiles-row3-mobile, .team-member-profiles-row4-mobile {
         display: flex;
     }
     .team-member-profiles-row1-mobile {
