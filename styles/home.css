@@ -71,7 +71,7 @@ main {
     display: block;
     width: fit-content;
     block-size: fit-content;
-    margin: 6.4vw 2.8vw 0 4vw;
+    
     float: right;
     padding: 0.3rem 0.4rem;
     border-radius: 0.4rem;
@@ -81,6 +81,10 @@ main {
     color: white;
     font-family: Alta-Regular, Arial, Helvetica, sans-serif;
     transition: all 0.3s ease 0s;
+
+    position: relative;
+    top: 8%;
+    left: -8%;
 }
 .main-intro a:hover, .main-intro a:focus {
     background-color: var(--hoverColour);

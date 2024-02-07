@@ -274,6 +274,13 @@ body::after {  /* Used to preload images for transitions */
 .linkedin_icon:hover, .linkedin_icon:focus { 
   background-image: url(../images/social-icons/linkedin.png);
 }
+.linkedtree_icon {
+  background-image: url(../images/social-icons/linkedtree-bw.png);
+  transition: all 0.3s ease 0s;
+}
+.linkedtree_icon:hover, .linkedtree_icon:focus {
+  background-image: url(../images/social-icons/linkedtree.png);
+}
 
 
 footer {

@@ -42,7 +42,7 @@ main h1 {
 .team-member-headshot {
     width: 12vw; /* this should be at least the same width as the headshot image */
     height: fit-content;
-    max-height: 270px;
+    max-height: 257.2px;
     text-align: center;
 }
 .img-headshot {
