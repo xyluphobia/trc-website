@@ -83,8 +83,8 @@ main {
     transition: all 0.3s ease 0s;
 
     position: relative;
-    top: 8%;
-    left: -8%;
+    top: -4%;
+    left: -6%;
 }
 .main-intro a:hover, .main-intro a:focus {
     background-color: var(--hoverColour);
