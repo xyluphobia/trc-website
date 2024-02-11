@@ -370,7 +370,12 @@ footer a:hover, footer a:focus {
   color: var(--primaryColour);
 }
 .footer-exp-logo {
-  display: none;
+  display: block;
+  align-self: center;
+  margin-left: 2%;
+
+  width: 4%;
+  height: 4%;
 }
 
 .burger-menu-button, .burger-menu {
@@ -500,6 +505,9 @@ footer a:hover, footer a:focus {
     margin-left: 23vw;
     display: block;
     width: 40%;
+
+    height: 32%;
+    align-self: auto;
   }
 
 }
