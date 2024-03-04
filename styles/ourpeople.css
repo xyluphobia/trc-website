@@ -147,7 +147,7 @@ main h1 {
 
  /* object-position is used to shift the image to the correct spot within it's container. */
 #gabby-murillo img { 
-    object-position: 0 23%;
+    object-position: 0 90%;
 }
 #rj-peace img {
     object-position: 0 11%;
